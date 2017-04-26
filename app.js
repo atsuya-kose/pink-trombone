@@ -205,7 +205,14 @@ var UI =
         this.autoWobbleButton.handleTouchStart(touch);
         autoWobble = this.autoWobbleButton.switchedOn;
         this.aboutButton.handleTouchStart(touch);
+    },
 
+    addTouch : function(touch)
+    {
+        // Verbose touch logging
+        console.log("addTouch()");
+        console.log(touch);
+        UI.touchesWithMouse.push(touch);
     },
 
     startTouches : function(event)
@@ -249,7 +256,7 @@ var UI =
             touch.y = (touches[j].pageY-UI.top_margin)/UI.width*600;
             touch.index = TractUI.getIndex(touch.x, touch.y);
             touch.diameter = TractUI.getDiameter(touch.x, touch.y);
-            UI.touchesWithMouse.push(touch);
+            UI.addTouch(touch);
             UI.buttonsHandleTouchStart(touch);
         }
 
@@ -333,7 +340,7 @@ var UI =
         touch.index = TractUI.getIndex(touch.x, touch.y);
         touch.diameter = TractUI.getDiameter(touch.x, touch.y);
         UI.mouseTouch = touch;
-        UI.touchesWithMouse.push(touch);
+        UI.addTouch(touch);
         UI.buttonsHandleTouchStart(touch);
         UI.handleTouches();
     },
