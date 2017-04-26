@@ -2,14 +2,15 @@
 
 Bare-handed procedural speech synthesis
 
+## Info
+
 version 1.1, March 2017
-by Neil Thapen
-venuspatrol.nfshost.com
 
+by Neil Thapen, [http://venuspatrol.nfshost.com](venuspatrol.nfshost.com)
 
-The original source code is from http://dood.al/pinktrombone/
+Original source: http://dood.al/pinktrombone/
 
-The app built from the code in this repo's master branch can be found here: [https://loisaidasam.github.io/pink-trombone/](https://loisaidasam.github.io/pink-trombone/)
+Repo build: [https://loisaidasam.github.io/pink-trombone/](https://loisaidasam.github.io/pink-trombone/)
 
 
 ## Bibliography
